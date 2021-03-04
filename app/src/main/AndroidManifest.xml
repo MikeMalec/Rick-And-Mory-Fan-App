@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rick_and_morty">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".ui.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icons8_rick_sanchez"
+        android:label="Rick And Morty"
+        android:roundIcon="@drawable/ic_icons8_rick_sanchez"
+        android:supportsRtl="true"
+        android:theme="@style/SplashScreenStyle"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".exoplayer.MusicService" />
+    </application>
+
+</manifest>
